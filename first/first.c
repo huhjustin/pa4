@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 
 int memRead = 0, memWrite = 0, cacheHit = 0, cacheMiss = 0;
 
