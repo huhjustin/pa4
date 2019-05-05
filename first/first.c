@@ -10,7 +10,7 @@ Cache objects
 Stores Valid Bit, Tag, Cache Block 
  */
 typedef struct cache{
-    int validBit, tag, cacheBlock, accessCount;
+    int validBit, tag, cacheBlock;
 } cache;
 
 int main(int argc, char *argv[]){
@@ -52,11 +52,11 @@ int main(int argc, char *argv[]){
     if(cacheSize == 0){
         valid = 0;
     }
-    //(5) Opens file for cache simulator, checks if it is a valid file
-
     //Make sure all input are valid, exits if not valid
     if(valid == 0){
         printf("error\n");
         return 0;
     }
+    //(5) Opens file for cache simulator, checks if it is a valid file
+
 }
